@@ -1,0 +1,73 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* soft pastel gradient similar to the example attachment */
+  background: linear-gradient(135deg, #F9DDEB 0%, #E8E9FF 50%, #E8F7F0 100%);
+  min-height: 100vh;
+  color: #5d5052;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}
+
+/* page shell to center main content and provide soft background */
+.page-shell {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+/* card container used to group main content into a rounded block */
+.site-card {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255,255,255,0.78);
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(39, 33, 39, 0.08);
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(238, 230, 202, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #896C6C 0%, #B8969A 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6d5559 0%, #9d7f87 100%);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid #896C6C;
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+hr {
+  display: none;
+}

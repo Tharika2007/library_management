@@ -1,0 +1,77 @@
+.action-container {
+  padding: 2.5rem;
+  border-radius: 20px;
+  margin: 0;
+  box-shadow: 0 10px 30px rgba(137, 108, 108, 0.12);
+  border: 3px solid rgba(229, 190, 181, 0.4);
+}
+
+.borrow-section {
+  background: linear-gradient(135deg, #E5BEB5 0%, #F5D5CB 100%);
+}
+
+.action-title {
+  margin: 0 0 2.5rem 0;
+  color: #6d5052;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.form-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 1.2rem 1.5rem;
+  border: 2px solid rgba(229, 190, 181, 0.5);
+  border-radius: 14px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #6d5052;
+}
+
+.form-input::placeholder {
+  color: #B5A0A0;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #896C6C;
+  background: white;
+  box-shadow: 0 0 15px rgba(137, 108, 108, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+  letter-spacing: 0.5px;
+}
+
+.btn-borrow {
+  background: linear-gradient(135deg, #D4A5A5 0%, #C7888E 100%);
+  color: white;
+}
+
+.btn-borrow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(137, 108, 108, 0.35);
+}
+
+.btn-borrow:active {
+  transform: translateY(-1px);
+}

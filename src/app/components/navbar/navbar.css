@@ -1,0 +1,30 @@
+.navbar {
+  background: linear-gradient(135deg, #896C6C 0%, #A57D7D 100%);
+  padding: 3rem 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.navbar-title {
+  margin: 0;
+  color: #F5FAE1;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.navbar-subtitle {
+  margin: 1rem 0 0 0;
+  color: rgba(245, 250, 225, 0.95);
+  font-size: 1.15rem;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+}

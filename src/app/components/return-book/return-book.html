@@ -1,0 +1,12 @@
+<div class="action-container return-section">
+  <h3 class="action-title">Return a Book</h3>
+  <div class="form-group">
+    <input
+      type="number"
+      [(ngModel)]="bookId"
+      placeholder="Enter Book ID"
+      class="form-input"
+    />
+    <button (click)="returnBook()" class="btn btn-return">Return Book</button>
+  </div>
+</div>

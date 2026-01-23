@@ -1,0 +1,33 @@
+<div class="book-list-container">
+  <h2 class="book-list-title">Available Books</h2>
+  
+  <div *ngIf="books.length === 0" class="no-books">
+    <p>No books in the library yet.</p>
+  </div>
+  
+  <div class="books-grid">
+    <div *ngFor="let book of books" 
+         class="book-card"
+         [ngClass]="{ 'available': book.available, 'unavailable': !book.available }">
+      <img *ngIf="book.cover" [src]="book.cover" alt="{{ book.title }} cover" class="book-cover" />
+
+      <div class="book-content">
+        <div class="book-header">
+          <h3>{{ book.title }}</h3>
+          <span class="status-badge" [ngClass]="{ 'available': book.available, 'unavailable': !book.available }">
+            {{ book.available ? '✓ Available' : '✕ Not Available' }}
+          </span>
+        </div>
+        <p class="book-author">by {{ book.author }}</p>
+      </div>
+
+      <div class="book-meta">
+        <div class="book-id">ID: {{ book.id }}</div>
+        <div class="book-actions">
+          <button class="btn-borrow" [disabled]="!book.available">Borrow</button>
+          <button class="btn-return" [disabled]="book.available">Return</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

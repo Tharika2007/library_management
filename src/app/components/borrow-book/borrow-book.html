@@ -1,0 +1,12 @@
+<div class="action-container borrow-section">
+  <h3 class="action-title">Borrow a Book</h3>
+  <div class="form-group">
+    <input
+      type="number"
+      [(ngModel)]="bookId"
+      placeholder="Enter Book ID"
+      class="form-input"
+    />
+    <button (click)="borrowBook()" class="btn btn-borrow">Borrow Book</button>
+  </div>
+</div>
